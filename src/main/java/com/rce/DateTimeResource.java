@@ -5,13 +5,12 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
-import org.eclipse.microprofile.faulttolerance.Fallback;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
 import java.util.Optional;
 
 @Path("hello")
-public class GreetingResource {
+public class DateTimeResource {
 
     @ConfigProperty(name = "config")
     private Optional<String> config;
